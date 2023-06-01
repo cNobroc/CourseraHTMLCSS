@@ -1,8 +1,128 @@
+<!DOCTYPE html>
 <html>
-<heed>
-    <title>Hello World</title
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MODULO 2</title>
+	<style>
+	* {
+ 	 box-sizing: border-box;
+	}
+	h1 {
+  	margin-bottom: 30px;
+	}
+	
+	.caja {
+	
+	background-color: lightgray;
+	width: 600px;
+	height: 200px;
+	position: relative;
+	border: 1px solid black;
+	   display: flex;
+  flex-direction: column;
+		}
+	.caja1 {
+	
+	 background-color: lightgray;
+	width: 600px;
+	height: 200px;
+	position: relative;
+	border: 1px solid black;
+	 display: flex;
+  flex-direction: column;
+	 
+		}
+
+	.mover{
+	margin-left: 8px;
+	margin-top: 50px;
+	overflow: hidden;
+	position: absolute;
+	
+	font-family: Arial, sans-serif;
+	}
+	p{
+		
+		background-color: lightblue;
+		border: 1px solid black;
+		width: 150px;
+		height: 30px;
+		position: absolute;
+		right: 0px;
+		top :-16px;	
+	}
+	@media(min-width: 992px) 
+	{
+	.caja{
+		width: 30%;
+		float: left;
+		margin-right: 30px;
+		
+		}
+	.caja1{
+		width: 30%;
+		float: left;
+		margin-right: 30px;
+		
+		}
+	}	
+	/*768 px y 991 px tableta*/
+	@media (min-width:	768px) and (max-width:991px) 
+	{
+	.caja{
+		width: 45%;
+		float: left;
+		margin-left: 2px;
+		margin-right: 35px;
+		margin-bottom: 20px;
+		
+		
+	}
+	.caja1{
+		
+	width: 100%;
+  	
+		}
+	}
+	@media(max-width: 767px) 
+	{
+		.caja{
+		 width: 100%;
+		display: block;
+    	margin-bottom: 20px;
+		}
+		.caja1{
+		 width: 100%;
+		display: block;
+    	margin-bottom: 20px;
+		}
+	}
+	</style>
 </head>
 <body>
-     <h1>Hello World</h1>
-<body>
+	<center>
+	<h1>OUR MENU</h1>
+	
+	</center>
+	<div class="caja">
+	<center>
+	<p>Chicken</p>
+	</center>
+	<div class = "mover">lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </div>
+</div>
+<div class="caja">
+	<center>
+	<p>Beef</p>
+	</center>
+	<div class = "mover">lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </div>
+</div>
+<div class="caja1">
+	<center>
+	<p>Sushi</p>
+	</center>
+	<div class = "mover">lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </div>
+</div>
+
+</body>
 </html>
